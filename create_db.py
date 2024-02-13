@@ -26,7 +26,7 @@ try:
                         name TEXT,
                         tematic TEXT,
                         count INTEGER,
-                        url TEXT,)''')
+                        url TEXT)''')
     cursor.execute(f"INSERT INTO orders (order_id, user_id, count, discount, master, order_list, order_date) "
                    f"VALUES (?, ?, ?, ?, ?, ?, ?)", (0, 0, 0, 0, 0, 0, 0))
     conn.commit()
